@@ -1,19 +1,15 @@
 
+# exercises here https://pynative.com/python-basic-exercise-for-beginners/
+
+
 class Basic:
     def user_input_integers(self):
-        """
-        Take in two numbers from user input and calculate the average
-        """
         num_1 = int(input("Enter first number: "))
         num_2 = int(input("Enter second number: "))
         avg = (num_1 + num_2) / 2
         print(f"The average is {avg}")
 
     def sum_num(self, specified_range=10):
-        """
-         Take in a range and calculate the sum of each number
-         and the preceeding number in the range
-        """
         for i in range(specified_range):
             if i < 1:
                 continue
@@ -21,10 +17,6 @@ class Basic:
             print(f"Current number: {i}, previous number: {i - 1}, sum: {sum}")
 
     def even_placed_chars(self, word):
-        """
-        Take in a string from the user and return only the strings
-        that are placed in even placed positions
-        """
         list = []
         for i, v in enumerate(word):
             if i % 2 == 0:
@@ -32,14 +24,19 @@ class Basic:
         return list
 
     def slice_string_with_diff(_, str, diff):
-        """
-          Takes in a string and a diff and removes thee first 0-n letters
-          of the string
-        """
         if diff > len(str):
             return None
         else:
             return str[diff:]
+
+    def bool_on_start_end_equality(_, list):
+        return list[0] == list[len(list) - 1]
+
+    def is_divisible_by_five(cls, list):
+        return [node for node in list if node % 5 == 0]
+
+    def count_substring(self, str, sub):
+        return str.count(sub)
 
     def run_excercises(self):
         self.sum_num()
