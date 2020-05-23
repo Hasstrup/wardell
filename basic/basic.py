@@ -31,6 +31,16 @@ class Basic:
                 list.append(v)
         return list
 
+    def slice_string_with_diff(_, str, diff):
+        """
+          Takes in a string and a diff and removes thee first 0-n letters
+          of the string
+        """
+        if diff > len(str):
+            return None
+        else:
+            return str[diff:]
+
     def run_excercises(self):
         self.sum_num()
         self.user_input_integers()

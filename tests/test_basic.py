@@ -11,6 +11,12 @@ class TestBasic(unittest.TestCase):
         result = Basic().even_placed_chars(test_string)
         self.assertEqual(expected, result, f"should be {expected}, got: {result}")
 
+    def test_slice_string_with_diff(self):
+        test_string = 'pynative'
+        expected = 'tive'
+        result = Basic().slice_string_with_diff(test_string, 4)
+        self.assertEqual(expected, result, f"should be {expected}, got: {result}")
+
 
 if __name__ == '__main__':
     unittest.main()
