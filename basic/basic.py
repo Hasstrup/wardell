@@ -38,6 +38,9 @@ class Basic:
     def count_substring(self, str, sub):
         return str.count(sub)
 
+    def number_palindrome(self, num):
+        return str(num) == str(num)[::-1]
+
     def run_excercises(self):
         self.sum_num()
         self.user_input_integers()

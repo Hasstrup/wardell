@@ -39,6 +39,11 @@ class TestBasic(unittest.TestCase):
         result = self.target.count_substring(str, "Emma")
         self.assertEqual(result, 2)
 
+    def test_number_palindrome(self):
+        self.assertTrue(self.target.number_palindrome(121))
+        self.assertTrue(self.target.number_palindrome(232))
+        self.assertFalse(self.target.number_palindrome(124))
+
 
 if __name__ == '__main__':
     unittest.main()
