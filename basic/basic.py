@@ -20,6 +20,17 @@ class Basic:
             sum = i + (i + 1)
             print(f"Current number: {i}, previous number: {i - 1}, sum: {sum}")
 
+    def even_placed_chars(self, word):
+        """
+        Take in a string from the user and return only the strings
+        that are placed in even placed positions
+        """
+        list = []
+        for i, v in enumerate(word):
+            if i % 2 == 0:
+                list.append(v)
+        return list
+
     def run_excercises(self):
         self.sum_num()
         self.user_input_integers()
