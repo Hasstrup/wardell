@@ -9,7 +9,19 @@ class Basic:
         avg = (num_1 + num_2) / 2
         print(f"The average is {avg}")
 
+    def sum_num(self, specified_range=10):
+        """
+         Take in a range and calculate the sum of each number
+         and the preceeding number in the range
+        """
+        for i in range(specified_range):
+            if i < 1:
+                continue
+            sum = i + (i + 1)
+            print(f"Current number: {i}, previous number: {i - 1}, sum: {sum}")
+
     def run_excercises(self):
+        self.sum_num()
         self.user_input_integers()
 
 
