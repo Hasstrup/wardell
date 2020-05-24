@@ -1,8 +1,6 @@
 import unittest
 from basic.basic import Basic
 
-print(__name__)
-
 
 class TestBasic(unittest.TestCase):
     def setUp(self):
